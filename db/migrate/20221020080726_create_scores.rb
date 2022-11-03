@@ -4,6 +4,7 @@ class CreateScores < ActiveRecord::Migration[7.0]
       t.string :subject
       t.integer :point
       t.string :grade
+      t.integer :student_id
 
       t.timestamps
     end
