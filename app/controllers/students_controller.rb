@@ -17,6 +17,13 @@ class StudentsController < ApplicationController
 
   # GET /students/1/edit
   def edit
+    @student_id = params[:id]
+  end
+
+  #GET /student/1/edit_score
+  def edit_score
+    @student_id = params[:id]
+    @a = Score.where(student_id: @student_id)
   end
 
   # POST /students or /students.json
